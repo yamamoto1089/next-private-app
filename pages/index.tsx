@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -22,10 +22,14 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.grid}>
-          <a href="/giojs" className={styles.card}>
-            <h2>Gio.js &rarr;</h2>
-            <p>Gio.jsを使って遊んでみた</p>
-          </a>
+          <Link href={"/giojs"} passHref>
+            <div className={styles.card}>
+              <>
+                <h2>Gio.js &rarr;</h2>
+                <p>Gio.jsを使って遊んでみた</p>
+              </>
+            </div>
+          </Link>
         </div>
       </main>
 

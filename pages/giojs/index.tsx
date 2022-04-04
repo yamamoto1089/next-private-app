@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as GIO from "giojs";
+import data from "./sampleDate";
 
 const initCountry = "JP";
 
 const Giojs: NextPage = () => {
   const ref = useRef(null);
-  const [country, setCountry] = useState(initCountry);
-  const [controller, setController] = useState(null);
 
   useEffect(() => {
     const controller = new GIO.Controller(ref.current, {
@@ -16,16 +15,11 @@ const Giojs: NextPage = () => {
       },
     });
 
-    setController(controller);
-
+    controller.addData(data);
     controller.init();
-
-    controller.onCountryPicked((country: any) => {
-      setCountry(country.ISOCode);
-    });
   }, []);
 
-  return <div style={{ width: 500, height: 500 }} ref={ref} />;
+  return <div style={{ width: 1000, height: 1000 }} ref={ref} />;
 };
 
 export default Giojs;

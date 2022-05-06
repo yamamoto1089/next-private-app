@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useEffect, useRef, useState } from "react";
-// TODO: tsに対応していないので型エラーがでる。なんとかしたい。
 import * as GIO from "giojs";
 import data from "./sampleDate";
 

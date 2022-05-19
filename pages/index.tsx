@@ -31,6 +31,17 @@ const Home: NextPage = () => {
             </div>
           </Link>
         </div>
+
+        <div className={styles.grid}>
+          <Link href={"/p5js"} passHref>
+            <div className={styles.card}>
+              <>
+                <h2>p5.js &rarr;</h2>
+                <p>p5.jsを使って遊んでみた</p>
+              </>
+            </div>
+          </Link>
+        </div>
       </main>
 
       {/* <footer className={styles.footer}>

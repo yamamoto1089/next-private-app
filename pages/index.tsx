@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             <div className={styles.card}>
               <>
                 <h2>p5.js &rarr;</h2>
-                <p>GenerativeArtっぽいことができるライブラリ</p>
+                <p>Processingのライブラリ</p>
               </>
             </div>
           </Link>

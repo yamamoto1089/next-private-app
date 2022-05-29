@@ -8,7 +8,7 @@ const Sketch = dynamic(import("react-p5"), {
 });
 
 // 以下コンポーネント
-export const SketchComponent = () => {
+const SketchComponent = () => {
   const preload = (p5: p5Types) => {
     // 画像などのロードを行う
   };

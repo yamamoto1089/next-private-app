@@ -42,6 +42,17 @@ const Home: NextPage = () => {
             </div>
           </Link>
         </div>
+
+        <div className={styles.grid}>
+          <Link href={"/babylonjs"} passHref>
+            <div className={styles.card}>
+              <>
+                <h2>babylonjs.js &rarr;</h2>
+                <p>babylonjs.jsを使って遊んでみた</p>
+              </>
+            </div>
+          </Link>
+        </div>
       </main>
 
       {/* <footer className={styles.footer}>

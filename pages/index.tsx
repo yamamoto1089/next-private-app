@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         </h1>
 
         <div className={styles.description}>
-          <p>フロントのライブラリを簡易的に試すためのページ</p>
+          <p>フロントのライブラリを簡易的に試すためのプロジェクト</p>
         </div>
 
         <div className={styles.grid}>
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             <div className={styles.card}>
               <>
                 <h2>Gio.js &rarr;</h2>
-                <p>Gio.jsを使って遊んでみた</p>
+                <p>3Dで地球儀が表示できるライブラリ</p>
               </>
             </div>
           </Link>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             <div className={styles.card}>
               <>
                 <h2>p5.js &rarr;</h2>
-                <p>p5.jsを使って遊んでみた</p>
+                <p>GenerativeArtっぽいことができるライブラリ</p>
               </>
             </div>
           </Link>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
             <div className={styles.card}>
               <>
                 <h2>babylonjs.js &rarr;</h2>
-                <p>babylonjs.jsを使って遊んでみた</p>
+                <p>WebGLのライブラリ</p>
               </>
             </div>
           </Link>

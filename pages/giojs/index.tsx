@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect, useRef, useState } from "react";
 import * as GIO from "giojs";
-import data from "./sampleDate";
+import data from "../../lib/giojs/sampleDate";
 
 const initCountry = "JP";
 
